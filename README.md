@@ -43,42 +43,56 @@ TensorFlow™를 통해 개발자는 클라우드에서 딥러닝을 쉽고 빠�
            - 호스트 모드시 2개의 EC2 ml.p3.16xlarge 인스턴스로 훈련
 
 
+- 세이지 메이커 모델 배포 및 추론
+    - 로컬 및 호스트 모드의 모델 배포 및 추론
+    
 ## 4. 노트북 구성
 
+**<font color="red">[중요] 아래 [필수] 노트북 순서로 실행을 해야 합니다.</font>**
+    - [옵션] 도 실행을 권고 합니다.
+    
+**아래 [필수] 만 진행시에는 약 50 분 정도 소요 시간이 걸립니다.** <br>
+[옵션] 을 같이 진행시에는 약 120 분 정도 소요 시간이 걸립니다.
+
+---
+    
 - 메인 폴더: SageMaker-Tensorflow-Step-By-Step/code/phase0
 
 
-- 0.0.Setup-Environment.ipynb 
+- [필수] 0.0.Setup-Environment.ipynb 
     - conda_tensorflow2_p36 커널에 tensorflow==2.4.1 설치 및 기타 필요 패키지 설치
 
 
-- 1.0.Downlaod-Dataset.ipynb
+- [필수] 1.0.Downlaod-Dataset.ipynb
     - Cifar10 데이터 다운로드 및 TF Record 생성
 
 
-- 1.1.Train-Scratch.ipynb
+- [필수] 1.1.Train-Scratch.ipynb
     - 스크래치 버전의 Keras 훈련 코드 노트북
 
 
-- 1.2.Train_Keras_Local_Script_Mode.ipynb    
+- [필수] 1.2.Train_Keras_Local_Script_Mode.ipynb    
     - 세이지 메이커 Keras 훈련 코드 로컬 모드 및 호스트 모드 실행
 
 
-- 1.5.Train_Keras_Horovod.ipynb    
+- [옵션] 1.5.Train_Keras_Horovod.ipynb    
     - 세이지 메이커 Keras 훈련 코드 호로보드 분산 훈련
 
 
-- 2.1.Train_TF_Local_Script_Mode.ipynb    
+- [옵션] 2.1.Train_TF_Local_Script_Mode.ipynb    
     - 세이지 메이커 TF2 훈련 코드 로컬 모드 및 호스트 모드 실행
 
 
-- 2.2.Train_TF_Horovod.ipynb
+- [옵션] 2.2.Train_TF_Horovod.ipynb
     - 세이지 메이커 TF2 훈련 코드 호로보드 분산 훈련
 
 
-- 3.1.Train-TF-DDP.ipynb    
+- [옵션] 3.1.Train-TF-DDP.ipynb    
     - 세이지 메이커 TF2 DDP 분산 훈련 코드
 
+
+- [필수] 4.1.Deploy_Inference-SageMaker.ipynb
+    - 세이지 메이커 로컬 및 호스트 모델 배포 후에 추론
 
 
 ## 참고: Amazon SageMaker Python SDK

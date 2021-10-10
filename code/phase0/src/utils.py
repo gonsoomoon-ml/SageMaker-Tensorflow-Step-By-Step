@@ -8,7 +8,7 @@ NUM_CLASSES = 10
 NUM_DATA_BATCHES = 5
 NUM_EXAMPLES_PER_EPOCH_FOR_TRAIN = 10000 * NUM_DATA_BATCHES
 
-
+classes = ("plane", "car", "bird", "cat", "deer", "dog", "frog", "horse", "ship", "truck")
 
 def get_filenames(channel_name, channel):
     if channel_name in ['train', 'validation', 'eval']:
