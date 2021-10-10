@@ -105,7 +105,8 @@ Amazon SageMaker를 사용하여 사용자 지정 TensorFlow 코드를 사용하
 
 
 # 참조 자료:
--Horovod 오피설 깃 리파지토리
+
+- Horovod 오피설 깃 리파지토리
     - https://github.com/horovod/horovod
     - tensorflow2_keras_mnist.py
         - https://github.com/horovod/horovod/blob/master/examples/tensorflow2/tensorflow2_keras_mnist.py
