@@ -79,6 +79,12 @@ TensorFlow™를 통해 개발자는 클라우드에서 딥러닝을 쉽고 빠�
     - 세이지 메이커 Keras 훈련 코드 호로보드 분산 훈련
 
 
+
+- [옵션] 2.1.1.Train_TF_Local_Script_Mode_DiskSize.ipynb
+    - 세이지 메이커 TF2 훈련 코드 로컬 모드 및 호스트 모드 실행
+    - 훈련 인스턴스의 디스크 사용 용량을 측정하는 코드가 추가 됨
+
+
 - [옵션] 2.1.Train_TF_Local_Script_Mode.ipynb    
     - 세이지 메이커 TF2 훈련 코드 로컬 모드 및 호스트 모드 실행
 
